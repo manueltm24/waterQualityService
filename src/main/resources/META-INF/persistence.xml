@@ -1,0 +1,38 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+    <persistence-unit name="Persistencia" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!--*** Aqui se colocan las clases con la etiqueta @Entity **-->
+        <class>com.waterQualityService.Clases.Parametro</class>
+        <class>com.waterQualityService.Clases.Muestra</class>
+
+        <properties>
+            <!--<property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:test" />-->
+
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://ko86t9azcob3a2f9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com/slpricevipn63v4q" />
+            <!--<property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/datosSensoresDB" /> --><!--** URL de la BD, cambiar nombreBD por el nombre deseado para su BD **-->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <!--<property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />-->
+            <property name="javax.persistence.jdbc.user" value="q9rv1rr2dz9i4qqk" />
+            <property name="javax.persistence.jdbc.password" value="j8q7dv23m7bghbux" />
+           <!-- <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>-->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+            <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
+            <property name="hibernate.show_sql" value="true"/>
+            <!-- Indica como será la generación de las tablas en el motor-->
+            <property name="javax.persistence.schema-generation.database.action" value="update"/>
+            <!--<property name="eclipselink.logging.level" value="ALL" />-->
+
+
+
+
+        </properties>
+
+
+
+    </persistence-unit>
+</persistence>
