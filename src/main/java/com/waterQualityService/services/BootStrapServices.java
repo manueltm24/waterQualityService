@@ -1,4 +1,4 @@
-package com.waterQualityService.Services;
+package com.waterQualityService.services;
 
 
 /**

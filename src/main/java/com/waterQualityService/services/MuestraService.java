@@ -1,7 +1,7 @@
-package com.waterQualityService.Services;
+package com.waterQualityService.services;
 
 
-import com.waterQualityService.Clases.Muestra;
+import com.waterQualityService.clases.Muestra;
 import com.waterQualityService.GestionDb;
 
 /**

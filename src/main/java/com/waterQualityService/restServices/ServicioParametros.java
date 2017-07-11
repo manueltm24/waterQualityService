@@ -1,9 +1,7 @@
 package com.waterQualityService.restServices;
 
-import com.waterQualityService.Clases.Muestra;
-import com.waterQualityService.Clases.Parametro;
-import com.waterQualityService.Services.MuestraService;
-import com.waterQualityService.Services.ParametrosService;
+import com.waterQualityService.clases.Parametro;
+import com.waterQualityService.services.ParametrosService;
 
 import java.util.List;
 

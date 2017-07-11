@@ -1,4 +1,4 @@
-package com.waterQualityService.Clases;
+package com.waterQualityService.clases;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -10,16 +10,12 @@ import java.util.Set;
 public class Direccion {
     @Id
     private long Id;
-
     private Long latitud;
     private Long longitud;
-
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Usuario> usuarios;
-
+    private Set<Usuario> usuarios;   ///????????????????
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Parametro> listaParametros;
-
-    @OneToOne
+    private Set<Parametro> listaParametros;  ///?????????????????
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     private Muestra muestra;
 }

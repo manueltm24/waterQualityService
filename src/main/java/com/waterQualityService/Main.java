@@ -2,12 +2,9 @@ package com.waterQualityService;
 
 
 
-import com.google.gson.JsonSyntaxException;
-import com.waterQualityService.Clases.ErrorRespuesta;
-import com.waterQualityService.Clases.Muestra;
-import com.waterQualityService.Clases.Parametro;
-import com.waterQualityService.Services.MuestraService;
-import com.waterQualityService.utilidades.JsonUtilidades;
+import com.waterQualityService.clases.Muestra;
+import com.waterQualityService.clases.Parametro;
+import com.waterQualityService.services.MuestraService;
 import freemarker.template.Configuration;
 
 import spark.ModelAndView;

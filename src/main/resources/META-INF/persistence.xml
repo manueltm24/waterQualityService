@@ -7,8 +7,8 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <!--*** Aqui se colocan las clases con la etiqueta @Entity **-->
-        <class>com.waterQualityService.Clases.Parametro</class>
-        <class>com.waterQualityService.Clases.Muestra</class>
+        <class>com.waterQualityService.clases.Parametro</class>
+        <class>com.waterQualityService.clases.Muestra</class>
 
         <properties>
             <!--<property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:test" />-->

@@ -1,4 +1,4 @@
-package com.waterQualityService.Clases;
+package com.waterQualityService.clases;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,23 +11,12 @@ import javax.persistence.OneToOne;
 public class Contenedor {
     @Id
     private long id;
-
     private String nombre;
-    private String descripcion;//Porque tiene una descripcion?
+    private String descripcion;  //Porque tiene una descripcion?
 
-    @OneToOne
-    private Muestra muestra;
 
-    public Contenedor(long id, String nombre, String descripcion, Muestra muestra) {
-        this.id = id;
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.muestra = muestra;
-    }
 
-    public Contenedor() {
-    }
-
+    //GETTERS AND SETTERS
     public long getId() {
         return id;
     }
@@ -52,11 +41,18 @@ public class Contenedor {
         this.descripcion = descripcion;
     }
 
-    public Muestra getMuestra() {
-        return muestra;
+
+
+
+    //CONSTRUCTORES
+    public Contenedor(long id, String nombre, String descripcion, Muestra muestra) {
+        this.id = id;
+        this.nombre = nombre;
+        this.descripcion = descripcion;
     }
 
-    public void setMuestra(Muestra muestra) {
-        this.muestra = muestra;
+    public Contenedor() {
     }
+
+
 }

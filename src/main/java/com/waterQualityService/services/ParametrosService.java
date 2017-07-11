@@ -1,7 +1,7 @@
-package com.waterQualityService.Services;
+package com.waterQualityService.services;
 
 
-import com.waterQualityService.Clases.Parametro;
+import com.waterQualityService.clases.Parametro;
 import com.waterQualityService.GestionDb;
 
 import javax.persistence.EntityManager;

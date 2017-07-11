@@ -1,4 +1,4 @@
-package com.waterQualityService.Clases;
+package com.waterQualityService.clases;
 
 /**
  * Created by vacax on 27/06/17.

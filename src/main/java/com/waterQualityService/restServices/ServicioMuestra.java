@@ -1,7 +1,7 @@
 package com.waterQualityService.restServices;
 
-import com.waterQualityService.Clases.Muestra;
-import com.waterQualityService.Services.MuestraService;
+import com.waterQualityService.clases.Muestra;
+import com.waterQualityService.services.MuestraService;
 
 import java.util.List;
 
@@ -30,8 +30,7 @@ public class ServicioMuestra {
     }
 
     public Muestra crearMuestra(Muestra muestra){
-        long proximoMuestra=(muestras.get(muestras.size()-1).getId())+1;
-        Muestra temporal=new Muestra(muestra.getListaParametros(),proximoMuestra,muestra.getDireccion());
+        Muestra temporal=new Muestra(muestra.getListaParametros(),muestra.getDireccion());
         muestraService.crear(temporal);
         return temporal;
     }

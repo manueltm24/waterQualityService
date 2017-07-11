@@ -1,7 +1,6 @@
-package com.waterQualityService.Services;
+package com.waterQualityService.services;
 
-import com.waterQualityService.Clases.Contenedor;
-import com.waterQualityService.Clases.ParametroValor;
+import com.waterQualityService.clases.Contenedor;
 import com.waterQualityService.GestionDb;
 
 /**
